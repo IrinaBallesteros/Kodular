@@ -1,0 +1,361 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="?KFbl#2-Die~D?s[M^fJ" x="-1170" y="-650">
+    <mutation component_type="Button" is_generic="false" instance_name="ButtonSensorAcelerometro" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">ButtonSensorAcelerometro</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="k0[0gr!,y~;z__,n)u~o">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="23#FH7lCCaKzu82YJ6*C">
+            <field name="SCREEN">Pantalla_Sensor_acelerometro</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Pa@dvwW3=g8d)Aunl(?Q" x="-1170" y="-570">
+    <mutation component_type="Button" is_generic="false" instance_name="ButtonSensorOrientacion" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">ButtonSensorOrientacion</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="71o91N6QLL_$)!)zBWCh">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="FiuIw@iq5Z+r5cQsRGhu">
+            <field name="SCREEN">Pantalla_Sensores</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="?A:tufJ4rS,{%3Qu!d$b" x="-1170" y="-510">
+    <mutation component_type="Button" is_generic="false" instance_name="ButtonRegistroUsuario" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">ButtonRegistroUsuario</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="2,^wf]0+HIn`tV}ESx$0">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="SG7hi|X@#qtzD)j%,O4u">
+            <field name="SCREEN">Pantalla_Registro_Usuario</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="+GIlcc)R7UhJBU{z^%Md" x="-1170" y="-430">
+    <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen1</field>
+    <statement name="DO">
+      <block type="local_declaration_statement" id="`cIhoa,r71!ZPazr0EY3">
+        <mutation>
+          <localname name="data"></localname>
+        </mutation>
+        <field name="VAR0">data</field>
+        <value name="DECL0">
+          <block type="component_method" id="{9KN9kj?XrU5#VgD_+H@">
+            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="lists_select_item" id="h9y#u34k*dH/?v$wdy9%">
+                <value name="LIST">
+                  <block type="component_method" id="2}onsh_^iUZMo!UeRU8c">
+                    <mutation component_type="TinyDB" method_name="GetTags" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="math_number" id="0xeNcz-WY$JD0~)[SiuN">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="O-UlG@!0zO1T`8*41kR{">
+                <field name="TEXT"></field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="STACK">
+          <block type="component_set_get" id="sGV+PHC@:YnR7(Ulx[}f">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="EtiquetaUsuario"></mutation>
+            <field name="COMPONENT_SELECTOR">EtiquetaUsuario</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="lists_select_item" id="d0!$;2)V7)CI3+(j0O}~">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id=":K.6;MuCCW4vE$W9[!0e">
+                    <field name="VAR">data</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="math_number" id="AGRL6[TwcOT0WXQ[W]9[">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="zC1;/1=M`h][`CFlgFc=">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="EtiquetaContrasena"></mutation>
+                <field name="COMPONENT_SELECTOR">EtiquetaContrasena</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="lists_select_item" id="]sUc#~|T@:*(CD:is|%?">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="Sr8Y5;6}R@8t/s;hl19+">
+                        <field name="VAR">data</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="math_number" id="%vxa7EG3x8*2An*HpT*`">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="?tq2!sVdjG.kbVU-K2gQ">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="EtiquetaEmail"></mutation>
+                    <field name="COMPONENT_SELECTOR">EtiquetaEmail</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="lists_select_item" id="(H(Cee0To7):csPMzk9w">
+                        <value name="LIST">
+                          <block type="lexical_variable_get" id="{.1}IV67^grjmrL6ln.p">
+                            <field name="VAR">data</field>
+                          </block>
+                        </value>
+                        <value name="NUM">
+                          <block type="math_number" id="UgZVZo~@39bfT/U]iiMQ">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="w8hoP1So/j){=GCTmsu@" x="-1170" y="-110">
+    <mutation component_type="Button" is_generic="false" instance_name="ButtonInicioSesion" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">ButtonInicioSesion</field>
+    <statement name="DO">
+      <block type="local_declaration_statement" id="..Qu,GgGF5dVMfXV8{~C">
+        <mutation>
+          <localname name="Data"></localname>
+        </mutation>
+        <field name="VAR0">Data</field>
+        <value name="DECL0">
+          <block type="component_method" id="?/~QMWaK}4?~I;}/^cq.">
+            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="lists_select_item" id="!RejO@yzk3x!TYaBD_[l">
+                <value name="LIST">
+                  <block type="component_method" id="|pDZ7YCe1yM_tOiAM)gn">
+                    <mutation component_type="TinyDB" method_name="GetTags" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="math_number" id=",$:0Q/z/CHpI`e6K3$5O">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="}ocZ^rFO9ac}a^|jqy#f">
+                <field name="TEXT"></field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="STACK">
+          <block type="controls_if" id="wIdNZ!Z{;X!I5eP4=pd1">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="%b6QFLA22v6|-ju!yZ}:">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="*H7sly)H=Qe?M~vLjGG%">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="Campo_Usuario"></mutation>
+                    <field name="COMPONENT_SELECTOR">Campo_Usuario</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="x0Nm2h3K*jhEw@j1@jX?">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_if" id="3z+jpjYqiIdaug4g)vX/">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="#l4Ncys0Mn~)BX8,O-ul">
+                    <field name="OP">NEQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="g|%TU_`?1GJ6;=7ue,7E">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoContrasena"></mutation>
+                        <field name="COMPONENT_SELECTOR">CampoContrasena</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="`F??r{4P,]]),c6P3X*+">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_if" id="J2%Br{r*We#kTv5N|Q|K">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="w}+a.5:[r1)o.%r0M:UP">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="logic_or" id="Zc1ec59b*Y^-mM3xz[~H">
+                            <mutation items="2"></mutation>
+                            <field name="OP">OR</field>
+                            <value name="A">
+                              <block type="math_compare" id="UCVHkKb1]dz#}GfAIV5E">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="component_set_get" id="}XI4Oisq3IK0Zlh^O3#P">
+                                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="Campo_Usuario"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Campo_Usuario</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_select_item" id="lYr9OSnGeb-5J!RkUz(#">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id="=1:vZf}a]OGjez~3xaN@">
+                                        <field name="VAR">Data</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="math_number" id="Djjj~7D3fi1AU/?8,@,v">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_compare" id="ex+[)t94swhMlbgR1HZ)">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="component_set_get" id="lc5/Z-c8@M2_6jnXf:bu">
+                                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="Campo_Usuario"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Campo_Usuario</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_select_item" id="cVt~WgU*9,Z^V]u9{=8`">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id="v!N$X|mb,]dMV~V%hMic">
+                                        <field name="VAR">Data</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="math_number" id="(|#juKO09k4yEbG0umx4">
+                                        <field name="NUM">5</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_compare" id="}k5g!icX,TO*T2^?Lr$w">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="component_set_get" id="V1hOC~NqgUf(TMmGLu;k">
+                                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoContrasena"></mutation>
+                                <field name="COMPONENT_SELECTOR">CampoContrasena</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="lists_select_item" id="i7-^op:O#V7w$8Jz|X:]">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="^P~O?lLM35e6Z+D%3TR#">
+                                    <field name="VAR">Data</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <block type="math_number" id="IS3M1BTR8kjjl_IzqRA0">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="controls_openAnotherScreen" id="FBgNWLRiTD4Hp8fg|WFK">
+                        <value name="SCREEN">
+                          <block type="helpers_screen_names" id="~tX%(}3IMrzmGYI{GF`p">
+                            <field name="SCREEN">Pantalla_Acceso_Usuario</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="component_method" id="siH]0@k,k8;q}qMa=xe5">
+                        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Notifier1</field>
+                        <value name="ARG0">
+                          <block type="text" id="i=M0#sGhA3`+%HGtxO1;">
+                            <field name="TEXT">Credenciales Incorrectas.</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="component_method" id="TfH.jB4(rXSwu5wKDY^1">
+                    <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Notifier1</field>
+                    <value name="ARG0">
+                      <block type="text" id="#]Bl@Zihs#4u30cz;+Uv">
+                        <field name="TEXT">Ingrese Contraseña.</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_method" id="-KJWa?ue5~Un~mIkDY?M">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <value name="ARG0">
+                  <block type="text" id="]FjeZeJ}925ZD2w]5$,k">
+                    <field name="TEXT">Ingrese Usuario.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>

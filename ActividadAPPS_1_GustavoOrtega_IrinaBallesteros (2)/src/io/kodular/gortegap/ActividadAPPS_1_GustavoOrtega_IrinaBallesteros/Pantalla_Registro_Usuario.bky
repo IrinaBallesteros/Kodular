@@ -1,0 +1,315 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="j06$e|K.lK`;|C;bi4o(" x="-370" y="-550">
+    <field name="NAME">StoreData</field>
+    <statement name="STACK">
+      <block type="component_method" id="QZp5xgav~[K.2F|^m]e-">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="component_set_get" id="80BfmHXcJ+Dzbt;YlYeM">
+            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoUsuario"></mutation>
+            <field name="COMPONENT_SELECTOR">CampoUsuario</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="lists_create_with" id=",*)ji@eSB/{lTGM`|I!S">
+            <mutation items="5"></mutation>
+            <value name="ADD0">
+              <block type="component_set_get" id="yFP3ep*fG,$_5~Qz2Zr]">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoUsuario"></mutation>
+                <field name="COMPONENT_SELECTOR">CampoUsuario</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="component_set_get" id=":Nf)i?/r?.I)z8ca2@A|">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoContrasena"></mutation>
+                <field name="COMPONENT_SELECTOR">CampoContrasena</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="component_set_get" id="#xWX@sx`71Fr[Y,=jF4o">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoConfirContra"></mutation>
+                <field name="COMPONENT_SELECTOR">CampoConfirContra</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="component_set_get" id="_@BT[gLW^fA69O0I4=N7">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoNombre"></mutation>
+                <field name="COMPONENT_SELECTOR">CampoNombre</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="ADD4">
+              <block type="component_set_get" id="tEoYa)khVlfy4B-{lQOp">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoEmail"></mutation>
+                <field name="COMPONENT_SELECTOR">CampoEmail</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="(VJwHtIQHMSPL1u42=!}" x="-790" y="-490">
+    <mutation component_type="Button" is_generic="false" instance_name="ButtonCancelar" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">ButtonCancelar</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="8Os5Gg]?X|(.+tWlFdI+">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="I7gA*D@=A*bnS)8lnphY">
+            <field name="SCREEN">Screen1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="sxhqx84bE%!_syU0sD;+" x="-790" y="-410">
+    <mutation component_type="Form" is_generic="false" instance_name="Pantalla_Registro_Usuario" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Pantalla_Registro_Usuario</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id=".}pse`~y#3.AVJjq(OK5">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="RyV%Ztzj`1?3F#AgbOFR">
+            <field name="SCREEN">Screen1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="r4VE;h8$L~eXLJ|Hi_+)" x="-790" y="-330">
+    <mutation component_type="Button" is_generic="false" instance_name="ButtonRegistarUsuario" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">ButtonRegistarUsuario</field>
+    <statement name="DO">
+      <block type="controls_if" id="g:,=~RPb_st7Eh.]NQg.">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="$a{w9hBBIhn3n]/Etq-Y">
+            <field name="OP">NEQ</field>
+            <value name="A">
+              <block type="component_set_get" id="1rRSq7xU{pOi=DqDe1eV">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoUsuario"></mutation>
+                <field name="COMPONENT_SELECTOR">CampoUsuario</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="F!{Ru{y97Z)]vwe_4BvR">
+                <field name="TEXT"></field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="dhESO.1Q#|3_R!fElxAD">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="LoqmSo0(}U|4%-lwC*{R">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="2Gc.Q~ab_JfIdbBt8J5g">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoContrasena"></mutation>
+                    <field name="COMPONENT_SELECTOR">CampoContrasena</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="p-($_k)h;^WMp}8zj[K#">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_if" id="]gA*,;V7)XVDg?mt$nI4">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="oR-%QAB4y%C!T+ohbCK:">
+                    <field name="OP">NEQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="O.Cz_@!J4,?ZP[5?./(@">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoConfirContra"></mutation>
+                        <field name="COMPONENT_SELECTOR">CampoConfirContra</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="8VILtN=67%+N0D}StMk+">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_if" id="e1c=$~,8|s!P9(@Td)S#">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="o1#UE2UiIU^H.Z{G(*FF">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="component_set_get" id="T8#b{QA(iRYC@tzzaU3`">
+                            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoContrasena"></mutation>
+                            <field name="COMPONENT_SELECTOR">CampoContrasena</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="component_set_get" id="n)qTMY~:Aga.6dTY8mI2">
+                            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoConfirContra"></mutation>
+                            <field name="COMPONENT_SELECTOR">CampoConfirContra</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="controls_if" id="G(XLp8V35Hy%42@^?v}.">
+                        <mutation else="1"></mutation>
+                        <value name="IF0">
+                          <block type="logic_compare" id="8AF^iV^RL[x0ldkG)933">
+                            <field name="OP">NEQ</field>
+                            <value name="A">
+                              <block type="component_set_get" id="I!OlfRC)TYcuicQ,8$.I">
+                                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoNombre"></mutation>
+                                <field name="COMPONENT_SELECTOR">CampoNombre</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="text" id="WtSD^.uN%~[MkD?S8.!Y">
+                                <field name="TEXT"></field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="controls_if" id=";zs(}Z8z.zY34fVI;}3`">
+                            <mutation else="1"></mutation>
+                            <value name="IF0">
+                              <block type="logic_compare" id="qHbe/RkTG`aM,nsctoxm">
+                                <field name="OP">NEQ</field>
+                                <value name="A">
+                                  <block type="component_set_get" id="eOfO,s2e.[k`dy;+=jo(">
+                                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="CampoEmail"></mutation>
+                                    <field name="COMPONENT_SELECTOR">CampoEmail</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="1MAb}fPWq60bRa0{3Q}x">
+                                    <field name="TEXT"></field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="component_method" id="rifj0^%Ty_V5YB+]Cc_y">
+                                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                                <value name="ARG0">
+                                  <block type="text" id="q7tJN!3U{JPJn6ZKr8[/">
+                                    <field name="TEXT">!!! Cuenta Registrada Exitosamente ¡¡¡</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="procedures_callnoreturn" id="#EyFyqTE4*E=bcVMt}gd" inline="false">
+                                    <mutation name="StoreData"></mutation>
+                                    <field name="PROCNAME">StoreData</field>
+                                    <next>
+                                      <block type="controls_openAnotherScreen" id="z*`{a[JQBKM4jTgteyQM">
+                                        <value name="SCREEN">
+                                          <block type="helpers_screen_names" id="?`7j`~8!B-Lj$e*)7FsL">
+                                            <field name="SCREEN">Pantalla_Acceso_Usuario</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <statement name="ELSE">
+                              <block type="component_method" id="1.u8ghXI+`1_Wj4psTlc">
+                                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                                <value name="ARG0">
+                                  <block type="text" id="T##0p(L@fi0^|![Lk!.w">
+                                    <field name="TEXT">Por favor, Confirmar Email.</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                          </block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="component_method" id="p(@9f0eAJnxy1j#/3Ox.">
+                            <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Notifier1</field>
+                            <value name="ARG0">
+                              <block type="text" id="b7|HmBPA/O9*`R@3wj45">
+                                <field name="TEXT">Por favor, Confirmar Nombre.</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="component_method" id="?Qp7#q23E{/aM,YTmG{u">
+                        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Notifier1</field>
+                        <value name="ARG0">
+                          <block type="text" id="F~K^#{as%64l2aS/PjD1">
+                            <field name="TEXT">Contraseña no es correcta.</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="component_method" id="*GHr6%M|~0:0]yANdw(/">
+                    <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Notifier1</field>
+                    <value name="ARG0">
+                      <block type="text" id="tOBSGM.~d7|V.4]4nWTm">
+                        <field name="TEXT">Por favor, Confirmar Contraseña.</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_method" id="B{y*j:w0sKi;3}*yKrS,">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <value name="ARG0">
+                  <block type="text" id="2={PoxxRyZGCcaY*69:=">
+                    <field name="TEXT">Por favor, Introduzca Contraseña.</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="w?BKPK1$Y?cOmYmD2qdJ">
+            <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="gSoG+%/_%gCwl39hq[33">
+                <field name="TEXT">Por favor, Introduzca Usuario.</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>

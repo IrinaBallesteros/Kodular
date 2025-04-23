@@ -1,0 +1,4 @@
+#|
+$JSON
+{"authURL":["creator.kodular.io"],"YaVersion":"242","Source":"Form","Properties":{"$Name":"Pantalla_Sensor_acelerometro","$Type":"Form","$Version":"44","AlignHorizontal":"3","AlignVertical":"2","AppId":"5055194095157248","AppName":"ActividadAPPS_1_GustavoOrtega_IrinaBallesteros","ReceiveSharedText":"none","Title":"Uso de Sensor Acelerometro","Uuid":"0","$Components":[{"$Name":"Etiqueta1","$Type":"Label","$Version":"10","FontBold":"True","FontSize":"18","Text":"Color #1: ","Uuid":"-912642843"},{"$Name":"Etiqueta2","$Type":"Label","$Version":"10","FontBold":"True","FontSize":"18","Text":"Color #2: ","Uuid":"331716639"},{"$Name":"Etiqueta3","$Type":"Label","$Version":"10","FontBold":"True","FontSize":"18","Text":"Color #3:","Uuid":"-1477416428"},{"$Name":"Acelerometro1","$Type":"AccelerometerSensor","$Version":"5","Uuid":"-903794290"}]}}
+|#
