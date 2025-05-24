@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="component_event" id="?KFbl#2-Die~D?s[M^fJ" x="-1170" y="-650">
+  <block type="component_event" id="?KFbl#2-Die~D?s[M^fJ" x="-1170" y="-298">
     <mutation component_type="Button" is_generic="false" instance_name="ButtonSensorAcelerometro" event_name="Click"></mutation>
     <field name="COMPONENT_SELECTOR">ButtonSensorAcelerometro</field>
     <statement name="DO">
@@ -12,7 +12,7 @@
       </block>
     </statement>
   </block>
-  <block type="component_event" id="Pa@dvwW3=g8d)Aunl(?Q" x="-1170" y="-570">
+  <block type="component_event" id="Pa@dvwW3=g8d)Aunl(?Q" x="-1170" y="-218">
     <mutation component_type="Button" is_generic="false" instance_name="ButtonSensorOrientacion" event_name="Click"></mutation>
     <field name="COMPONENT_SELECTOR">ButtonSensorOrientacion</field>
     <statement name="DO">
@@ -25,7 +25,7 @@
       </block>
     </statement>
   </block>
-  <block type="component_event" id="?A:tufJ4rS,{%3Qu!d$b" x="-1170" y="-510">
+  <block type="component_event" id="?A:tufJ4rS,{%3Qu!d$b" x="-1170" y="-158">
     <mutation component_type="Button" is_generic="false" instance_name="ButtonRegistroUsuario" event_name="Click"></mutation>
     <field name="COMPONENT_SELECTOR">ButtonRegistroUsuario</field>
     <statement name="DO">
@@ -38,7 +38,7 @@
       </block>
     </statement>
   </block>
-  <block type="component_event" id="+GIlcc)R7UhJBU{z^%Md" x="-1170" y="-430">
+  <block type="component_event" id="+GIlcc)R7UhJBU{z^%Md" x="-1170" y="-78">
     <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="Initialize"></mutation>
     <field name="COMPONENT_SELECTOR">Screen1</field>
     <statement name="DO">
@@ -139,7 +139,7 @@
       </block>
     </statement>
   </block>
-  <block type="component_event" id="w8hoP1So/j){=GCTmsu@" x="-1170" y="-110">
+  <block type="component_event" id="w8hoP1So/j){=GCTmsu@" x="-1170" y="242">
     <mutation component_type="Button" is_generic="false" instance_name="ButtonInicioSesion" event_name="Click"></mutation>
     <field name="COMPONENT_SELECTOR">ButtonInicioSesion</field>
     <statement name="DO">
